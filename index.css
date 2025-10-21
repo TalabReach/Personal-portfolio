@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+    padding: 0px 40px;
+}
+.header{
+    width: 100%;
+    height:100vh ;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+nav img{
+    width: 100px;
+    margin-left: 40px;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 10px 24px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.header-text{
+    width: 50%;
+    height: 100%;
+}
+.header-text p{
+    margin-top: 20%;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+.header-text h1{
+    margin-left: 60px;
+    font-size: 30px;
+}
+.header-text h1 span{
+    color: #ff004f;
+    
+}
+.images{
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+.images img{
+    width: 600px;
+    margin-left: -120px;
+}
+
+/* ------------about------------ */
+.about{
+    margin-top: 40px;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 40px;
+}
+.row{
+    display: flex;
+    gap: 24px;
+}
+.about-col-1 img{
+    width: 300px;
+    height: 400px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    padding: 8px 40px;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    color:#fff ;
+    margin-bottom: 16px;
+  
+}
+.teb-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+   
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0px;;
+}
+.tab-contents span {
+    color: #b54769;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.tab-contents{
+    display: none;
+}
