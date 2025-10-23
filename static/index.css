@@ -55,9 +55,38 @@ nav ul li a:hover::after{
     height: 85vh;
     display: flex;
 }
+.Reach-R{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.reach{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border: #ed2a2a 2px solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.reach img{
+    width: 350px;
+}
 .header-text{
-    width: 50%;
+    width: 60%;
     height: 100%;
+}
+.header-text img{
+    width: 50px; 
+}
+.i_m{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+nav h1:hover{
+    color: aqua;
 }
 .header-text p{
     margin-top: 20%;
@@ -334,3 +363,8 @@ form .btn2{
 
 }
 
+/* -------------css for small ------------------ */
+
+/* @media  only screen and(max-with:600px){
+    .header
+} */
