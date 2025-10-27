@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Messages</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .delete-btn { color: white; background-color: red; padding: 5px 10px; text-decoration: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">List of Messages</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+        {% for msg in messages %}
+        <tr>
+            <td>{{ msg[0] }}</td>
+            <td>{{ msg[1] }}</td>
+            <td>{{ msg[2] }}</td>
+            <td>{{ msg[3] }}</td>
+            <td><a class="delete-btn" href="/delete/{{ msg[0] }}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p style="text-align:center;"><a href="/">Submit New Message</a></p>
+</body>
+</html>
