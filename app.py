@@ -29,7 +29,6 @@ def init_sqlite():
     conn.commit()
     conn.close()
 
-# --- Routes ---
 
 # Home page with form
 @app.route('/')
@@ -61,7 +60,7 @@ def submit():
     )
     conn.commit()
     conn.close()
-
+#change 
     return redirect(url_for('index'))
 
 # List messages from MySQL
