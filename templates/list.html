@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Messages</title>
+    <link rel="stylesheet" href="../static/list.css">
+</head>
+<body>
+
+    <h2 style="text-align:center;">List of Messages</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+        {% for msg in messages %}
+        <tr>
+            <td>{{ msg[0] }}</td>
+            <td>{{ msg[1] }}</td>
+            <td>{{ msg[2] }}</td>
+            <td>{{ msg[3] }}</td>
+            <td><a class="delete-btn" href="#" onclick="showConfirm('{{ msg[0] }}')">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Back to Home Link (Bottom) -->
+    <div style="text-align:center; margin-top: 20px; font-size: 20px;">
+        <a href="/" class="home-link">Back to Home</a>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="confirmModal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this message?</p>
+            <button class="modal-btn btn-yes" onclick="confirmDelete()">Yes</button>
+            <button class="modal-btn btn-no" onclick="closeModal()">No</button>
+        </div>
+    </div>
+
+    <script>
+        let deleteId = null;
+
+        function showConfirm(id) {
+            deleteId = id;
+            document.getElementById("confirmModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("confirmModal").style.display = "none";
+        }
+
+        function confirmDelete() {
+            window.location.href = "/delete/" + deleteId;
+        }
+    </script>
+      
+</body>
+</html>
