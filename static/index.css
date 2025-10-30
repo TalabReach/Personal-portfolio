@@ -511,3 +511,227 @@ hr{
 
 
 
+/* ----------------css for small screens----------------- */
+
+nav .material-symbols-outlined{
+        display: none;
+    }
+
+@media (max-width: 426px) {
+
+    body {
+        overflow-x: hidden;
+    }
+     nav h1{
+        font-size: 16px;
+     }
+
+    nav .material-symbols-outlined{
+        display: block;
+        font-size: 25px;
+    }
+
+    
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+
+     nav ul li {
+        display: block;
+        margin: 25px;
+    }
+     
+    nav ul .material-symbols-outlined{
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        cursor: pointer;
+
+    }
+
+    nav {
+        height: auto;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    nav img {
+        width: 70px;
+        margin-left: 0;
+    }
+
+
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .header {
+        height: auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Reach-R {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .reach {
+        width: 200px;
+        height: 200px;
+    }
+
+    .reach img {
+        width: 250px;
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-text p {
+        margin: 20px 0 10px 0;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .images {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .images img {
+        width: 90%;
+        margin-left: 0;
+    }
+
+
+
+    /* ---- About ---- */
+    .about {
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-col-2 {
+        padding: 20px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .tab-links {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    /* ---- Services ---- */
+    #service {
+        padding: 60px 20px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .services-list div {
+        padding: 20px;
+    }
+
+    /* ---- Portfolio ---- */
+    .portfolio {
+        padding: 60px 20px;
+    }
+
+    .work-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .around {
+        margin: 10px auto;
+    }
+
+    /* ---- Contact ---- */
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+
+    form input, form textarea {
+        font-size: 16px;
+    }
+
+    .btn, .btn.btn2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ---- Footer ---- */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-section p, .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hr_p {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
