@@ -72,6 +72,16 @@ def list_data():
     cur.close()
     return render_template('list.html', messages=data)
 
+
+#login and than go to list 
+
+# @app.route('/login')
+# def list_data():
+#     return render_template('login.html')
+
+
+
+
 # Delete message from MySQL
 @app.route('/delete/<int:id>')
 def delete(id):

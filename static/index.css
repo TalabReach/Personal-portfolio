@@ -517,6 +517,12 @@ nav .material-symbols-outlined{
         display: none;
     }
 
+/* ------ for tablete -------------- */
+
+
+
+/* -----for phone------ */
+
 @media (max-width: 426px) {
 
     body {
