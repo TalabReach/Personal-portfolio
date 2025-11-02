@@ -28,4 +28,34 @@ This is a personal portfolio website for **Talab Reach**, showcasing skills, pro
 
 ## Project Structure
 
+![homepage](static/image/page.png)
+
+
+
+## About Page
+
+## Index
+
+- **Home**  Show my image , skill and little information. 
+- **About** This page show my information  like skills , expericence , and education.
+- **Service** explain some kills that I can to do.
+- **References** People who have taught me and can vouch for my skills and character.
+- **Contact** All people can send message to me and donwnload my CV also.
+
+## Login
+
+![login](static/image/login.png)
+ 
+ For admin have to input email and password if we want to see list message if input email and password you can join to list message.
+
+## list_message
+![login](static/image/list_message.png)
+
+
+
+
+
+
+
+
 
