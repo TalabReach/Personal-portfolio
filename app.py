@@ -5,6 +5,8 @@ import sqlite3
 app = Flask(__name__)
 
 # --- MySQL Configuration ---
+
+
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
@@ -12,6 +14,7 @@ app.config['MYSQL_DB'] = 'reach_classa'
 mysql = MySQL(app)
 
 # --- SQLite Configuration ---
+
 SQLITE_DB = 'local_messages.db'
 
 def init_sqlite():
@@ -29,6 +32,7 @@ def init_sqlite():
     conn.close()
 
 # --- Routes ---
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -72,6 +76,9 @@ def submit():
     conn.close()
 
     return redirect(url_for('index'))
+
+
+
 
 if __name__ == '__main__':
     init_sqlite()
