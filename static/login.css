@@ -1,0 +1,107 @@
+/* Reset and basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+}
+
+/* Login container */
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #f1f1f1;
+}
+
+/* Input groups */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+}
+
+/* Error message */
+#error-message {
+  margin-top: 10px;
+  color: #ff4c4c;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+.back_home{
+  text-align: center;
+  
+}
+.back_home a{
+  color: #0072ff;
+  text-decoration: none;
+  font-size: 20px;
+}

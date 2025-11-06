@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../static/login.css">
+  <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Email</label>
+        <input type="text" id="username" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <button type="submit">Login</button>
+      <p id="error-message"></p>
+    </form>
+    <div class="back_home">
+        <!-- <a href="index.html" class="home-link">Back to Home</a> -->
+          <a href="/" class="home-link">Back to Home</a>
+    </div>
+  </div>
+  
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const errorMessage = document.getElementById("error-message");
+
+      // Hardcoded credentials
+      const validUsername = "dada330012@gmail.com";
+      const validPassword = "330012reach";
+
+      if (username === validUsername && password === validPassword) {
+        alert("Login successful!");
+        // Redirect to Flask route for list page
+        window.location.href = "/list";
+      } else {
+        errorMessage.textContent = "Invalid username or password!";
+        errorMessage.style.color = "red";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
